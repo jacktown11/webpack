@@ -17266,7 +17266,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(10)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -17291,7 +17291,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".hello{\r\n\tcolor: red;\r\n\tbackground: url(" + __webpack_require__(0) + ") no-repeat;\r\n}", ""]);
+exports.push([module.i, "@font-face{\r\n\tfont-family: 'MyFont';\r\n\tsrc: url(" + __webpack_require__(8) + "),\r\n\t\turl(" + __webpack_require__(9) + ");\r\n\tfont-weight: 600;\r\n\tfont-style: normal;\r\n}\r\n\r\n.hello{\r\n\tfont-family: 'MyFont';\r\n\tcolor: red;\r\n\tbackground: url(" + __webpack_require__(0) + ") no-repeat;\r\n}", ""]);
 
 // exports
 
@@ -17382,6 +17382,18 @@ function toComment(sourceMap) {
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "422c99785021819ab69f15aa240e2609.ttf";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b8528f875b29770e832e55f5ec30cece.ttf";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -17435,7 +17447,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(9);
+var	fixUrls = __webpack_require__(11);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17751,7 +17763,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 
