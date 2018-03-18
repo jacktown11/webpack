@@ -1,0 +1,8 @@
+div{
+    margin: 2px;
+    padding: 5px;
+    color: red;
+    border: 2px solid #080;
+    background-color: #aaa;
+    background-image: url(../img/pic2.jpg);
+}

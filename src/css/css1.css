@@ -1,0 +1,11 @@
+@import url(./css3.css);
+
+div{
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid #080;
+    background-color: linear-gradient(#ccc, #000);
+}
+p{
+    display: flex;
+}
